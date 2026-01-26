@@ -1,0 +1,18 @@
+.toggle-selector__input-container--horizontal {
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.toggle-selector__viewport--horizontal {
+    flex-direction: row;
+    flex-grow: 1;
+    overflow: hidden;
+}
+
+.toggle-selector__content-container--horizontal {
+    flex-direction: row;
+    flex-grow: 1;
+    flex-shrink: 0;
+    overflow: hidden;
+}
