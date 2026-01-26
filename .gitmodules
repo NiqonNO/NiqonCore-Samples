@@ -1,0 +1,9 @@
+[submodule "Assets/_Core"]
+	path = Assets/_Core
+	url = https://github.com/NiqonNO/Core.git
+[submodule "Assets/_UIToolkit"]
+	path = Assets/_UIToolkit
+	url = https://github.com/NiqonNO/UI-Toolkit.git
+[submodule "Assets/_UIUnity"]
+	path = Assets/_UIUnity
+	url = https://github.com/NiqonNO/UI-uGUI.git
