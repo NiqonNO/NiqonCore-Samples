@@ -199,8 +199,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DocumentView: {fileID: 1152359185}
   Vector3Value:
-    UseReference: 1
-    LocalValue: {x: 0, y: 0, z: 0}
+    UseReference: 0
+    LocalValue: {x: 33, y: 34, z: 33}
     LocalReference: {fileID: 11400000, guid: fc6bd3ac6df541c47b757e9a218d9dee, type: 2}
   FloatValue:
     UseReference: 0

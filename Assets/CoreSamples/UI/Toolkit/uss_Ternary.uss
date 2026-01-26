@@ -1,21 +1,32 @@
 .ternary-slider__input-container {
-    background-image: url("project://database/Assets/_UIToolkit/Graphics/Sprites/pngegg.png?fileID=-1171790437229086565&guid=9cf7772ef58451a42b64fa45a25311db&type=3#pngegg_0");
+    background-image: url("project://database/Assets/CoreSamples/Graphics/sprt_Triangle%201.png?fileID=1130617326&guid=2f443599d2594564d87c7408b8c41264&type=3#triangle1_0");
     -unity-background-scale-mode: scale-to-fit;
+    overflow: visible;
 }
 
 .ternary-slider__drag-area {
-    position: absolute;
-    top: 15%;
-    bottom: 25.5%;
-    left: 14.5%;
-    right: 14.5%;
+    padding-top: 4%;
+    padding-right: 9%;
+    padding-bottom: 3.5%;
+    padding-left: 9%;
+    flex-grow: 1;
 }
 
 .ternary-slider__handle {
-    background-image: url("project://database/Assets/_UIToolkit/Graphics/Sprites/sprt_Knob.png?fileID=-2684344430345912852&guid=0f0dc8b0d8f501349beefc72d05891ba&type=3#circle1_0");
+    background-image: url("project://database/Assets/CoreSamples/Graphics/sprt_Knob.png?fileID=-2684344430345912852&guid=0f0dc8b0d8f501349beefc72d05891ba&type=3#circle1_0");
     -unity-background-image-tint-color: rgb(255, 255, 255);
     -unity-background-scale-mode: scale-to-fit;
     height: 10%;
     translate: -50% -50%;
     width: 10%;
+}
+
+.unity-label {
+    color: rgb(193, 149, 88);
+    -unity-text-align: middle-center;
+    font-size: 27px;
+}
+
+#VisualElement > .unity-slider > .unity-slider__input {
+    flex-shrink: 1;
 }

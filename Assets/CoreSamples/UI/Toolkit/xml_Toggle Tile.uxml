@@ -1,13 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement style="flex-grow: 1; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; display: flex;">
-        <ui:VisualElement name="Selection-Highlight" style="flex-grow: 1; background-color: rgb(255, 255, 255); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; position: absolute; top: 0%; bottom: 0%; right: 0%; left: 0%; display: flex;">
-            <ui:Label text="Label" style="-unity-text-align: middle-center; flex-grow: 1;">
+    <ui:VisualElement data-source-type="NiqonNO.Samples.NOSampleModel, Assembly-CSharp" style="flex-grow: 1; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(0, 0, 0); border-right-color: rgb(0, 0, 0); border-top-color: rgb(0, 0, 0); border-bottom-color: rgb(0, 0, 0); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; display: flex;">
+        <ui:VisualElement name="Selection-Highlight" style="flex-grow: 1; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; position: absolute; top: 0%; bottom: 0%; right: 0%; left: 0%; display: flex;">
+            <ui:Label style="-unity-text-align: middle-center; flex-grow: 1;">
                 <Bindings>
-                    <ui:DataBinding property="text" data-source-path="__Items_k__BackingField[0]._DisplayName_k__BackingField" data-source="project://database/Assets/CoreSamples/UI/View%20Models/Item%20List.asset?fileID=11400000&amp;guid=bef39e15803a1d5419d5d94d4864a4a3&amp;type=2#Item List" binding-mode="ToTarget" />
+                    <ui:DataBinding property="text" data-source-path="_DisplayName_k__BackingField" binding-mode="ToTarget" />
                 </Bindings>
             </ui:Label>
             <Bindings>
-                <ui:DataBinding property="style.backgroundColor" data-source-path="__Items_k__BackingField[0]._DisplayColor_k__BackingField" data-source="project://database/Assets/CoreSamples/UI/View%20Models/Item%20List.asset?fileID=11400000&amp;guid=bef39e15803a1d5419d5d94d4864a4a3&amp;type=2#Item List" binding-mode="ToTarget" />
+                <ui:DataBinding property="style.backgroundColor" data-source-path="_DisplayColor_k__BackingField" binding-mode="ToTarget" />
             </Bindings>
         </ui:VisualElement>
     </ui:VisualElement>
