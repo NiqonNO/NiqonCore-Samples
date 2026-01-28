@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using NiqonNO.Core;
+using NiqonNO.UI;
 using NiqonNO.UI.MVVM;
 using Unity.Properties;
 using UnityEngine;
@@ -25,7 +26,11 @@ namespace NiqonNO.Samples
 			get => FloatValue.Value;
 			set => FloatValue.Value = value;
 		}
-		[CreateProperty]
+
+		[CreateProperty] 
+		private NOCollectionState ToggleSelectorState { get; set; }
+
+		/*[CreateProperty]
 		private IReadOnlyList<NOSampleModel> ToggleSelectorList
 		{
 			get => SampleData.Items;
@@ -36,7 +41,7 @@ namespace NiqonNO.Samples
 		{
 			get => SampleData.SelectedIndex;
 			set => SampleData.SelectedIndex = value;
-		}
+		}*/
 
 		public NOSampleViewModel(
 			NOVector3Variable vector3Value,
@@ -46,11 +51,13 @@ namespace NiqonNO.Samples
 			Vector3Value = vector3Value;
 			FloatValue = floatValue;
 			SampleData = sampleData;
+
+			ToggleSelectorState = NOCollectionState.Create<NOSampleModel>(SampleData.Items, SampleData.SelectedIndex);
 		}
 
-		public override void Bind(UIDocument context)
+		public override void Bind(VisualElement context)
 		{
-			context.rootVisualElement.dataSource = this;
+			context.dataSource = this;
 		}
 
 		public override void Unbind()
