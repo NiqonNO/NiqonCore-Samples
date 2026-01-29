@@ -15,11 +15,13 @@
                 <ui:DataBinding property="value" data-source-path="SliderValue" binding-mode="TwoWay" />
             </Bindings>
         </ui:Slider>
-        <ui:VisualElement name="toggle-selector_example" data-source-type="NiqonNO.Samples.NOSampleViewModel, Assembly-CSharp" template="xml_Toggle Selector">
+        <ui:VisualElement name="toggle-selector_example" template="xml_Toggle Selector">
             <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Item%20Selector.uss?fileID=7433441132597879392&amp;guid=8ebc8e8e12b9e05459bbef648bdefa44&amp;type=3#uss_Item Selector" />
             <NiqonNO.UI.NOToggleSelector mode="Horizontal" name="NOToggleSelector" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" style="display: flex;">
                 <Bindings>
                     <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay" />
+                    <ui:DataBinding property="SourceCollection" data-source-path="Items" />
+                    <ui:DataBinding property="SelectedIndex" data-source-path="SelectedItem" binding-mode="TwoWay" />
                 </Bindings>
             </NiqonNO.UI.NOToggleSelector>
         </ui:VisualElement>

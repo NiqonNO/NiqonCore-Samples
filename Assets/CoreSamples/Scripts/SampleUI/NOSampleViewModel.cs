@@ -1,4 +1,5 @@
 ﻿using System.Collections.Generic;
+using System.Linq;
 using NiqonNO.Core;
 using NiqonNO.UI;
 using NiqonNO.UI.MVVM;
@@ -25,23 +26,23 @@ namespace NiqonNO.Samples
 		{
 			get => FloatValue.Value;
 			set => FloatValue.Value = value;
-		}
-
-		[CreateProperty] 
-		private NOCollectionState ToggleSelectorState { get; set; }
-
-		/*[CreateProperty]
-		private IReadOnlyList<NOSampleModel> ToggleSelectorList
+		}		
+		
+		[CreateProperty]
+		private List<Object> Items
 		{
-			get => SampleData.Items;
-			//set => SampleData.Items = value;
+			get => SampleData.Items.Cast<Object>().ToList();
+			set => SampleData.Items = value.Cast<NOSampleModel>().ToList();
 		}
 		[CreateProperty]
-		private int ToggleSelectorSelection
+		private int SelectedItem
 		{
 			get => SampleData.SelectedIndex;
 			set => SampleData.SelectedIndex = value;
-		}*/
+		}
+
+		/*[CreateProperty] 
+		private NOBindingCollectionState ToggleSelectorState { get; set; }*/
 
 		public NOSampleViewModel(
 			NOVector3Variable vector3Value,
@@ -52,7 +53,11 @@ namespace NiqonNO.Samples
 			FloatValue = floatValue;
 			SampleData = sampleData;
 
-			ToggleSelectorState = NOCollectionState.Create<NOSampleModel>(SampleData.Items, SampleData.SelectedIndex);
+			/*ToggleSelectorState = new NOBindingCollectionState()
+			{
+				DataSource = new NOBindingContextCollection<NOSampleModel>(SampleData.Items),
+				SelectedItem = SampleData.SelectedIndex,
+			};*/
 		}
 
 		public override void Bind(VisualElement context)
