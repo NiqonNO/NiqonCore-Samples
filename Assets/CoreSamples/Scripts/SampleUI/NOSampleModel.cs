@@ -20,8 +20,6 @@ namespace NiqonNO.Samples
 		}
 
 		public void Unbind()
-		{
-			throw new System.NotImplementedException();
-		}
+		{ }
 	}
 }

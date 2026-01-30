@@ -1,5 +1,4 @@
 ﻿using System.Collections.Generic;
-using System.Linq;
 using NiqonNO.Core;
 using NiqonNO.UI;
 using NiqonNO.UI.MVVM;
@@ -14,7 +13,9 @@ namespace NiqonNO.Samples
 		private readonly NOVector3Variable Vector3Value;
 		private readonly NOFloatVariable FloatValue;
 		private readonly NOSampleModelList SampleData;
-
+		
+		private NOBindingContextCollection<NOSampleModel> SampleDataItems;
+		
 		[CreateProperty]
 		private Vector3 TernaryValue
 		{
@@ -26,23 +27,19 @@ namespace NiqonNO.Samples
 		{
 			get => FloatValue.Value;
 			set => FloatValue.Value = value;
-		}		
-		
-		[CreateProperty]
-		private List<Object> Items
-		{
-			get => SampleData.Items.Cast<Object>().ToList();
-			set => SampleData.Items = value.Cast<NOSampleModel>().ToList();
 		}
+		[CreateProperty]
+		private List<INOBindingContext> Items
+		{
+			get => SampleDataItems.Data;
+			set => SampleDataItems.Data = value;
+		}		
 		[CreateProperty]
 		private int SelectedItem
 		{
 			get => SampleData.SelectedIndex;
 			set => SampleData.SelectedIndex = value;
 		}
-
-		/*[CreateProperty] 
-		private NOBindingCollectionState ToggleSelectorState { get; set; }*/
 
 		public NOSampleViewModel(
 			NOVector3Variable vector3Value,
@@ -53,20 +50,12 @@ namespace NiqonNO.Samples
 			FloatValue = floatValue;
 			SampleData = sampleData;
 
-			/*ToggleSelectorState = new NOBindingCollectionState()
-			{
-				DataSource = new NOBindingContextCollection<NOSampleModel>(SampleData.Items),
-				SelectedItem = SampleData.SelectedIndex,
-			};*/
+			SampleDataItems = new NOBindingContextCollection<NOSampleModel>(SampleData.Items);
 		}
 
 		public override void Bind(VisualElement context)
 		{
 			context.dataSource = this;
-		}
-
-		public override void Unbind()
-		{
 		}
 	}
 }

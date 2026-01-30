@@ -21,7 +21,4 @@ MonoBehaviour:
   - {fileID: 11400000, guid: 4bfde7c977692794a8793afa90b35f36, type: 2}
   - {fileID: 11400000, guid: 142ee16f797e08c40b9bea3d13d337fc, type: 2}
   - {fileID: 11400000, guid: e9e38f375a250ca4c98654859419e815, type: 2}
-  - {fileID: 11400000, guid: 142ee16f797e08c40b9bea3d13d337fc, type: 2}
-  - {fileID: 11400000, guid: 390eff392bde91e469a7ef27f7dfe995, type: 2}
-  - {fileID: 11400000, guid: 4c5b14194c5a2ee4f8856c7253f05525, type: 2}
-  <SelectedIndex>k__BackingField: 0
+  <SelectedIndex>k__BackingField: 8
