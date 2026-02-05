@@ -1,0 +1,9 @@
+.unity-slider__input {
+    flex-shrink: 1;
+}
+
+.unity-label {
+    color: rgb(193, 149, 88);
+    -unity-text-align: middle-center;
+    font-size: 27px;
+}
