@@ -1,15 +1,13 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Ternary.uss?fileID=7433441132597879392&amp;guid=9ee71f9a7ee026447ae62c517898a477&amp;type=3#uss_Ternary" />
     <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Preview.uss?fileID=7433441132597879392&amp;guid=5f0f76ff97607d046858e8cf51782b98&amp;type=3#uss_Preview" />
     <ui:VisualElement data-source-type="NiqonNO.Samples.NOSampleViewModel, Assembly-CSharp" name="VisualElement" style="background-color: rgb(26, 26, 26); padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(193, 149, 88); border-right-color: rgb(193, 149, 88); border-top-color: rgb(193, 149, 88); border-bottom-color: rgb(193, 149, 88); height: 980px; width: 570px; align-self: flex-start; flex-direction: column; top: 5%; left: 50px;">
-        <ui:VisualElement name="ternary-slider_example" template="xml_Ternary" style="padding-top: 5%; padding-right: 5%; padding-bottom: 5%; padding-left: 5%; height: 446px;">
-            <NiqonNO.UI.NOAspectRatioFitterElement ratio-width="128" ratio-height="113" name="NOAspectRatioFitterElement" style="flex-grow: 1;">
-                <NiqonNO.UI.NOTernarySlider high-value="100" round-to-int="false" value="48.5,34,48.5" label="Ternary" style="flex-grow: 1; flex-shrink: 1; overflow: visible; flex-direction: column;">
-                    <Bindings>
-                        <ui:DataBinding property="value" data-source-path="TernaryValue" binding-mode="TwoWay" />
-                    </Bindings>
-                </NiqonNO.UI.NOTernarySlider>
-            </NiqonNO.UI.NOAspectRatioFitterElement>
+        <ui:VisualElement template="xml_Ternary" style="height: 454px;">
+            <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Ternary.uss?fileID=7433441132597879392&amp;guid=9ee71f9a7ee026447ae62c517898a477&amp;type=3#uss_Ternary" />
+            <NiqonNO.UI.NOTernarySlider high-value="100" round-to-int="false" value="48.5,34,48.5" style="overflow: visible; flex-grow: 1;">
+                <Bindings>
+                    <ui:DataBinding property="value" data-source-path="TernaryValue" binding-mode="ToTarget" />
+                </Bindings>
+            </NiqonNO.UI.NOTernarySlider>
         </ui:VisualElement>
         <ui:Slider label="Slider" value="42" high-value="100" show-input-field="true" style="flex-direction: column;">
             <Bindings>
@@ -18,7 +16,7 @@
         </ui:Slider>
         <ui:VisualElement template="xml_Toggle Selector" style="height: 170px;">
             <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Item%20Selector.uss?fileID=7433441132597879392&amp;guid=8ebc8e8e12b9e05459bbef648bdefa44&amp;type=3#uss_Item Selector" />
-            <NiqonNO.UI.NOToggleSelector mode="Horizontal" name="NOToggleSelector" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" style="display: flex; flex-grow: 1;">
+            <NiqonNO.UI.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" style="display: flex; flex-grow: 1;">
                 <Bindings>
                     <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay" />
                     <ui:DataBinding property="SourceCollection" data-source-path="Items" binding-mode="TwoWay" />
