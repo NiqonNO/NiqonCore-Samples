@@ -1,61 +1,34 @@
-﻿using System.Collections.Generic;
-using NiqonNO.Core;
-using NiqonNO.UI;
-using NiqonNO.UI.MVVM;
-using Unity.Properties;
-using UnityEngine;
+﻿using NiqonNO.UI.MVVM;
 using UnityEngine.UIElements;
 
 namespace NiqonNO.Samples
 {
-	public class NOSampleViewModel : NOViewModel
+	public class NOSampleViewModel : NOViewModel<NOSampleData>
 	{
-		private readonly NOVector3Variable Vector3Value;
-		private readonly NOFloatVariable FloatValue;
-		private readonly NOSampleModelList SampleData;
+		private readonly NOTernaryViewModel TernaryViewModel;
+		private readonly NOSliderViewModel SliderViewModel1;
+		private readonly NOSliderViewModel SliderViewModel2;
+		private readonly NOSampleDataCollectionViewModel SelectorViewModel1;
+		private readonly NOSampleDataCollectionViewModel SelectorViewModel2;
 		
-		private NOBindingContextCollection<NOSampleModel> SampleDataItems;
 		
-		[CreateProperty]
-		private Vector3 TernaryValue
+		public NOSampleViewModel(NOSampleData data) : base(data)
 		{
-			get => Vector3Value.Value;
-			set => Vector3Value.Value = value;
-		}
-		[CreateProperty]
-		private float SliderValue
-		{
-			get => FloatValue.Value;
-			set => FloatValue.Value = value;
-		}
-		[CreateProperty]
-		private List<INOBindingContext> Items
-		{
-			get => SampleDataItems.Data;
-			set => SampleDataItems.Data = value;
-		}		
-		[CreateProperty]
-		private int SelectedItem
-		{
-			get => SampleData.SelectedIndex;
-			set => SampleData.SelectedIndex = value;
-		}
-
-		public NOSampleViewModel(
-			NOVector3Variable vector3Value,
-			NOFloatVariable floatValue,
-			NOSampleModelList sampleData)
-		{
-			Vector3Value = vector3Value;
-			FloatValue = floatValue;
-			SampleData = sampleData;
-
-			SampleDataItems = new NOBindingContextCollection<NOSampleModel>(SampleData.Items);
+			TernaryViewModel = new NOTernaryViewModel(data.TernaryData);
+			SliderViewModel1 = new NOSliderViewModel(data.SliderDataA);
+			SliderViewModel2 = new NOSliderViewModel(data.SliderDataB);
+			SelectorViewModel1 = new NOSampleDataCollectionViewModel(data.SelectorDataA);
+			SelectorViewModel2 = new NOSampleDataCollectionViewModel(data.SelectorDataB);
 		}
 
 		public override void Bind(VisualElement context)
 		{
-			context.dataSource = this;
+			base.Bind(context);
+			TernaryViewModel.Bind(context);
+			SliderViewModel1.Bind(context);
+			SliderViewModel2.Bind(context);
+			SelectorViewModel1.Bind(context);
+			SelectorViewModel2.Bind(context);
 		}
 	}
 }

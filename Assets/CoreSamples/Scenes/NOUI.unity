@@ -202,15 +202,45 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   DocumentView: {fileID: 1152359185}
-  Vector3Value:
-    UseReference: 0
-    LocalValue: {x: 33, y: 34, z: 33}
-    LocalReference: {fileID: 11400000, guid: fc6bd3ac6df541c47b757e9a218d9dee, type: 2}
-  FloatValue:
-    UseReference: 0
-    LocalValue: 38
-    LocalReference: {fileID: 0}
-  SampleData: {fileID: 11400000, guid: bef39e15803a1d5419d5d94d4864a4a3, type: 2}
+  DataSource:
+    <BindTarget>k__BackingField: 
+    TernaryData:
+      <BindTarget>k__BackingField: ternary-sample
+      <Data>k__BackingField:
+        UseReference: 0
+        LocalValue: {x: 33, y: 34, z: 33}
+        LocalReference: {fileID: 0}
+    SliderDataA:
+      <BindTarget>k__BackingField: slider-sample-A
+      <Data>k__BackingField:
+        UseReference: 0
+        LocalValue: 33
+        LocalReference: {fileID: 0}
+    SliderDataB:
+      <BindTarget>k__BackingField: slider-sample-B
+      <Data>k__BackingField:
+        UseReference: 0
+        LocalValue: 66
+        LocalReference: {fileID: 0}
+    SelectorDataA:
+      <BindTarget>k__BackingField: selector-sample-A
+      <Data>k__BackingField:
+      - {fileID: 11400000, guid: 8f020345e5dd7754f82beaffa68b083d, type: 2}
+      - {fileID: 11400000, guid: 437a0f3ec06ebee459de78029e14e092, type: 2}
+      - {fileID: 11400000, guid: 4c5b14194c5a2ee4f8856c7253f05525, type: 2}
+      - {fileID: 11400000, guid: 4fb7d7b55904d0c459138e60f2570703, type: 2}
+      - {fileID: 11400000, guid: 390eff392bde91e469a7ef27f7dfe995, type: 2}
+      - {fileID: 11400000, guid: 4bfde7c977692794a8793afa90b35f36, type: 2}
+      - {fileID: 11400000, guid: 142ee16f797e08c40b9bea3d13d337fc, type: 2}
+      - {fileID: 11400000, guid: e9e38f375a250ca4c98654859419e815, type: 2}
+      <SelectedIndex>k__BackingField: 0
+    SelectorDataB:
+      <BindTarget>k__BackingField: selector-sample-B
+      <Data>k__BackingField:
+      - {fileID: 11400000, guid: 437a0f3ec06ebee459de78029e14e092, type: 2}
+      - {fileID: 11400000, guid: 4c5b14194c5a2ee4f8856c7253f05525, type: 2}
+      - {fileID: 11400000, guid: 4fb7d7b55904d0c459138e60f2570703, type: 2}
+      <SelectedIndex>k__BackingField: 0
 --- !u!1 &1259326811
 GameObject:
   m_ObjectHideFlags: 0

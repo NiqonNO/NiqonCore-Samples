@@ -1,6 +1,4 @@
-﻿using NiqonNO.Core;
-using NiqonNO.UI.MVVM;
-using UnityEngine;
+﻿using NiqonNO.UI.MVVM;
 
 namespace NiqonNO.Samples
 {

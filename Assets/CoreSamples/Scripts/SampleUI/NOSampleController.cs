@@ -1,5 +1,4 @@
-﻿using NiqonNO.Core;
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace NiqonNO.Samples
 {
@@ -7,21 +6,13 @@ namespace NiqonNO.Samples
 	{
 		[SerializeField] [Header("View")] 
 		private NOSampleView DocumentView;
-		
+
 		[SerializeField] [Header("Model")] 
-		NOVector3Variable Vector3Value;
-		[SerializeField] 
-		NOFloatVariable FloatValue;
-		[SerializeField] 
-		NOSampleModelList SampleData;
+		private NOSampleData DataSource;
 
 		private void OnEnable()
 		{
-			DocumentView.Init(new NOSampleViewModel(
-				Vector3Value,
-				FloatValue,
-				SampleData
-			));
+			DocumentView.Init(new NOSampleViewModel(DataSource));
 		}
 	}
 }

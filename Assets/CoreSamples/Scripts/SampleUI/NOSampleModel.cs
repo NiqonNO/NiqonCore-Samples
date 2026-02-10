@@ -14,12 +14,10 @@ namespace NiqonNO.Samples
 		[field: SerializeField] public Color DisplayColor { get; set; }
 
 		[field: SerializeField] public Sprite DisplaySprite { get; set; }
+		
 		public void Bind(VisualElement context)
 		{
 			context.dataSource = this;
 		}
-
-		public void Unbind()
-		{ }
 	}
 }
