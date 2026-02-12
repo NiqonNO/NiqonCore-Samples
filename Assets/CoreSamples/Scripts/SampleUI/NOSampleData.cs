@@ -5,11 +5,8 @@ using UnityEngine;
 namespace NiqonNO.Samples
 {
 	[Serializable]
-	public class NOSampleData : INOBindingData
+	public class NOSampleData : NOBindingData
 	{
-		[field: SerializeField]
-		public string BindTarget { get; private set; }
-		
 		[SerializeField]
 		public NOTernaryData TernaryData;
 		[SerializeField] 

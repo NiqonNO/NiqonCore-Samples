@@ -1,13 +1,13 @@
 <ui:UXML xmlns:ui="UnityEngine.UIElements" noNamespaceSchemaLocation="../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <ui:VisualElement data-source-type="NiqonNO.Samples.NOSampleModel, Assembly-CSharp" style="border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0); border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; margin-right: 5px; margin-left: 5px; margin-bottom: 5px; margin-top: 5px; flex-grow: 1;">
-        <ui:VisualElement name="Selection-Highlight" style="flex-grow: 1; border-top-left-radius: 50%; border-top-right-radius: 50%; border-bottom-right-radius: 50%; border-bottom-left-radius: 50%; display: flex;">
-            <ui:Label style="-unity-text-align: middle-center; flex-grow: 1;">
+    <ui:VisualElement data-source-type="NiqonNO.Samples.NOSampleModel, Assembly-CSharp" style="border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-left-color: rgb(255, 255, 0); border-right-color: rgb(255, 255, 0); border-top-color: rgb(255, 255, 0); border-bottom-color: rgb(255, 255, 0); margin-right: 5px; margin-left: 5px; margin-bottom: 5px; margin-top: 5px; flex-grow: 1; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px;">
+        <ui:VisualElement name="Selection-Highlight" style="display: flex; background-color: rgba(0, 0, 0, 0); border-top-left-radius: 5px; border-top-right-radius: 5px; border-bottom-right-radius: 5px; border-bottom-left-radius: 5px; margin-top: 5px; margin-right: 5px; margin-bottom: 5px; margin-left: 5px; align-items: stretch; justify-content: space-around; flex-grow: 1; align-content: stretch; align-self: stretch;">
+            <ui:Label text="Item 0" style="-unity-text-align: middle-center; -unity-font-style: bold; -unity-text-outline-color: rgb(0, 0, 0); -unity-text-outline-width: 1px; color: rgb(255, 255, 255); align-content: stretch; flex-grow: 1;">
                 <Bindings>
-                    <ui:DataBinding property="text" data-source-path="_DisplayName_k__BackingField" binding-mode="ToTarget" />
+                    <ui:DataBinding property="text" data-source-path="_DisplayName_k__BackingField" binding-mode="ToTarget"/>
                 </Bindings>
             </ui:Label>
             <Bindings>
-                <ui:DataBinding property="style.backgroundColor" data-source-path="_DisplayColor_k__BackingField" binding-mode="ToTarget" />
+                <ui:DataBinding property="style.backgroundColor" data-source-path="_DisplayColor_k__BackingField" binding-mode="ToTarget"/>
             </Bindings>
         </ui:VisualElement>
     </ui:VisualElement>
