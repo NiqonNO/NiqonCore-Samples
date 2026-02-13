@@ -205,13 +205,93 @@ MonoBehaviour:
   DataSource:
     <BindTarget>k__BackingField:
       BindBy: 0
-      _BindName: 
-      _BindClass: 
+      BindName: 
+      BindClass: 
+    <Callbacks>k__BackingField:
+    - <BindTarget>k__BackingField:
+        BindBy: 2
+        BindName: 
+        BindClass: unity-base-slider__dragger
+      OnHover:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
+            m_MethodName: Play
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      OnClick:
+        m_PersistentCalls:
+          m_Calls: []
+    - <BindTarget>k__BackingField:
+        BindBy: 2
+        BindName: 
+        BindClass: ternary-slider__handle
+      OnHover:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
+            m_MethodName: Play
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      OnClick:
+        m_PersistentCalls:
+          m_Calls: []
+    - <BindTarget>k__BackingField:
+        BindBy: 2
+        BindName: 
+        BindClass: unity-button
+      OnHover:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
+            m_MethodName: Play
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
+      OnClick:
+        m_PersistentCalls:
+          m_Calls:
+          - m_Target: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
+            m_MethodName: Play
+            m_Mode: 1
+            m_Arguments:
+              m_ObjectArgument: {fileID: 0}
+              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_IntArgument: 0
+              m_FloatArgument: 0
+              m_StringArgument: 
+              m_BoolArgument: 0
+            m_CallState: 2
     TernaryData:
       <BindTarget>k__BackingField:
         BindBy: 2
-        _BindName: 
-        _BindClass: ternary-slider
+        BindName: 
+        BindClass: ternary-slider
+      <Callbacks>k__BackingField: []
       <Data>k__BackingField:
         UseReference: 0
         LocalValue: {x: 33, y: 34, z: 33}
@@ -219,8 +299,9 @@ MonoBehaviour:
     SliderDataA:
       <BindTarget>k__BackingField:
         BindBy: 1
-        _BindName: slider-sample-A
-        _BindClass: 
+        BindName: slider-sample-A
+        BindClass: 
+      <Callbacks>k__BackingField: []
       <Data>k__BackingField:
         UseReference: 0
         LocalValue: 33
@@ -228,8 +309,9 @@ MonoBehaviour:
     SliderDataB:
       <BindTarget>k__BackingField:
         BindBy: 1
-        _BindName: slider-sample-B
-        _BindClass: 
+        BindName: slider-sample-B
+        BindClass: 
+      <Callbacks>k__BackingField: []
       <Data>k__BackingField:
         UseReference: 0
         LocalValue: 66
@@ -237,8 +319,9 @@ MonoBehaviour:
     SelectorDataA:
       <BindTarget>k__BackingField:
         BindBy: 1
-        _BindName: selector-sample-A
-        _BindClass: 
+        BindName: selector-sample-A
+        BindClass: 
+      <Callbacks>k__BackingField: []
       <Data>k__BackingField:
       - {fileID: 11400000, guid: 8f020345e5dd7754f82beaffa68b083d, type: 2}
       - {fileID: 11400000, guid: 437a0f3ec06ebee459de78029e14e092, type: 2}
@@ -252,8 +335,9 @@ MonoBehaviour:
     SelectorDataB:
       <BindTarget>k__BackingField:
         BindBy: 1
-        _BindName: selector-sample-B
-        _BindClass: 
+        BindName: selector-sample-B
+        BindClass: 
+      <Callbacks>k__BackingField: []
       <Data>k__BackingField:
       - {fileID: 11400000, guid: 437a0f3ec06ebee459de78029e14e092, type: 2}
       - {fileID: 11400000, guid: 4c5b14194c5a2ee4f8856c7253f05525, type: 2}

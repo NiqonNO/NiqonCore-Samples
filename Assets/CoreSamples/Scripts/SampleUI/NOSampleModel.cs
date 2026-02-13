@@ -19,5 +19,8 @@ namespace NiqonNO.Samples
 		{
 			context.dataSource = this;
 		}
+
+		public void Unbind()
+		{ }
 	}
 }
