@@ -204,8 +204,8 @@ MonoBehaviour:
   DocumentView: {fileID: 1152359185}
   DataSource:
     <BindTarget>k__BackingField:
-      BindBy: 0
-      BindName: 
+      BindBy: 1
+      BindName: VisualElement
       BindClass: 
     <Callbacks>k__BackingField:
     - <BindTarget>k__BackingField:
@@ -215,13 +215,13 @@ MonoBehaviour:
       OnHover:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
-            m_MethodName: Play
-            m_Mode: 1
+          - m_Target: {fileID: 11400000, guid: 4bcbd0d4be972bf4596b0ded72d0173c, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOAudioManager, NiqonNO.Core
+            m_MethodName: PlayClip
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+              m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -237,13 +237,13 @@ MonoBehaviour:
       OnHover:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
-            m_MethodName: Play
-            m_Mode: 1
+          - m_Target: {fileID: 11400000, guid: 4bcbd0d4be972bf4596b0ded72d0173c, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOAudioManager, NiqonNO.Core
+            m_MethodName: PlayClip
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+              m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -259,13 +259,13 @@ MonoBehaviour:
       OnHover:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
-            m_MethodName: Play
-            m_Mode: 1
+          - m_Target: {fileID: 11400000, guid: 4bcbd0d4be972bf4596b0ded72d0173c, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOAudioManager, NiqonNO.Core
+            m_MethodName: PlayClip
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_ObjectArgument: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
+              m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 
@@ -274,13 +274,13 @@ MonoBehaviour:
       OnClick:
         m_PersistentCalls:
           m_Calls:
-          - m_Target: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
-            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
-            m_MethodName: Play
-            m_Mode: 1
+          - m_Target: {fileID: 11400000, guid: 4bcbd0d4be972bf4596b0ded72d0173c, type: 2}
+            m_TargetAssemblyTypeName: NiqonNO.Core.Audio.NOAudioManager, NiqonNO.Core
+            m_MethodName: PlayClip
+            m_Mode: 2
             m_Arguments:
-              m_ObjectArgument: {fileID: 0}
-              m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+              m_ObjectArgument: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
+              m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip, NiqonNO.Core
               m_IntArgument: 0
               m_FloatArgument: 0
               m_StringArgument: 

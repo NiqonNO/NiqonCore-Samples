@@ -148,7 +148,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f51e4d7a39b101a41894b4adf6501536, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NiqonNO.Core::NiqonNO.Core.NOSoundsManager
-  source: {fileID: 1289799569}
+  EmitterTemplate: {fileID: 1289799571}
 --- !u!4 &21819033
 Transform:
   m_ObjectHideFlags: 0
@@ -174,9 +174,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1289799570}
+  - component: {fileID: 1289799571}
   - component: {fileID: 1289799569}
   m_Layer: 0
-  m_Name: GameObject
+  m_Name: SoundEmitter
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -194,7 +195,7 @@ AudioSource:
   OutputAudioMixerGroup: {fileID: 0}
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 0}
-  m_PlayOnAwake: 1
+  m_PlayOnAwake: 0
   m_Volume: 1
   m_Pitch: 1
   Loop: 0
@@ -294,6 +295,19 @@ Transform:
   m_Children: []
   m_Father: {fileID: 21819033}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &1289799571
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1289799568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d60b55bc3e604aeebdbcddb371014403, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NiqonNO.Core::NiqonNO.Core.Audio.NOSoundEmitter
+  Source: {fileID: 1289799569}
 --- !u!1 &1585099615
 GameObject:
   m_ObjectHideFlags: 0
