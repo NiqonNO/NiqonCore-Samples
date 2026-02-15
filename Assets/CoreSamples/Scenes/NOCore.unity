@@ -304,10 +304,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1289799568}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d60b55bc3e604aeebdbcddb371014403, type: 3}
+  m_Script: {fileID: 11500000, guid: b4c50ab196044cf3b8a8676332c05af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NiqonNO.Core::NiqonNO.Core.Audio.NOSoundEmitter
-  Source: {fileID: 1289799569}
+  AudioSource: {fileID: 1289799569}
 --- !u!1 &1585099615
 GameObject:
   m_ObjectHideFlags: 0
