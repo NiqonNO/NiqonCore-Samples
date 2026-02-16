@@ -14,7 +14,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: NiqonNO.Core::NiqonNO.Core.Audio.NOSoundClip
   <MixerGroup>k__BackingField: {fileID: 0}
   <Loop>k__BackingField: 0
-  <Frequent>k__BackingField: 0
   <Priority>k__BackingField: 128
   VolumeRange: {x: 1, y: 1}
   PitchRange: {x: 0.85, y: 1.15}
@@ -26,7 +25,6 @@ MonoBehaviour:
   <VolumeRolloff>k__BackingField: 0
   <MinDistance>k__BackingField: 1
   <MaxDistance>k__BackingField: 500
-  <FadeInTime>k__BackingField: 0
-  <FadeOutTime>k__BackingField: 0
+  <MaxInstances>k__BackingField: 2
   Clips:
   - {fileID: 8300000, guid: 14f47288111d4664fb5038912ee055d7, type: 3}

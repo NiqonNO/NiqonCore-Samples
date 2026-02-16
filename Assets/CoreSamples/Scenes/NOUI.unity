@@ -299,14 +299,13 @@ MonoBehaviour:
               m_Mode: 2
               m_Arguments:
                 m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip,
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClipData,
                   NiqonNO.Core
                 m_IntArgument: 0
                 m_FloatArgument: 0
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-        BlockOnHold: 1
     - rid: 4838228645951307848
       type: {class: NOHoverCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
       data:
@@ -319,14 +318,13 @@ MonoBehaviour:
               m_Mode: 2
               m_Arguments:
                 m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip,
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClipData,
                   NiqonNO.Core
                 m_IntArgument: 0
                 m_FloatArgument: 0
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-        BlockOnHold: 1
     - rid: 4838228645951307849
       type: {class: NOHoverCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
       data:
@@ -339,14 +337,13 @@ MonoBehaviour:
               m_Mode: 2
               m_Arguments:
                 m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip,
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClipData,
                   NiqonNO.Core
                 m_IntArgument: 0
                 m_FloatArgument: 0
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-        BlockOnHold: 0
     - rid: 4838228645951307850
       type: {class: NOClickCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
       data:
@@ -359,7 +356,7 @@ MonoBehaviour:
               m_Mode: 2
               m_Arguments:
                 m_ObjectArgument: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClip,
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.NOSoundClipData,
                   NiqonNO.Core
                 m_IntArgument: 0
                 m_FloatArgument: 0
