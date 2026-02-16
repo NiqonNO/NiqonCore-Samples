@@ -7,3 +7,23 @@
     -unity-text-align: middle-center;
     font-size: 27px;
 }
+
+#VisualElement > #ternary-sample > .ternary-slider__input-container > #ternary-drag-area:hover > #ternary-drag-handle {
+    background-color: rgb(184, 184, 184);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+}
+
+#VisualElement > .unity-base-slider > .unity-slider__input > #unity-drag-container:hover > #unity-dragger {
+    background-color: rgb(184, 184, 184);
+    border-left-color: rgb(255, 255, 255);
+    border-right-color: rgb(255, 255, 255);
+    border-top-color: rgb(255, 255, 255);
+    border-bottom-color: rgb(255, 255, 255);
+    border-top-width: 3px;
+    border-right-width: 3px;
+    border-bottom-width: 3px;
+    border-left-width: 3px;
+}
