@@ -474,6 +474,11 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   <MonoBehaviourManagers>k__BackingField: []
   <ScriptableObjectManagers>k__BackingField: []
+  bb:
+    UseReference: 0
+    LocalValue: 0
+    LocalReference: {fileID: 0}
+  aa: {fileID: 0}
 --- !u!4 &1259326813
 Transform:
   m_ObjectHideFlags: 0

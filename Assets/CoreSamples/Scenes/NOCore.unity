@@ -340,6 +340,11 @@ MonoBehaviour:
   <MonoBehaviourManagers>k__BackingField:
   - {fileID: 21819032}
   <ScriptableObjectManagers>k__BackingField: []
+  bb:
+    UseReference: 0
+    LocalValue: 0
+    LocalReference: {fileID: 0}
+  aa: {fileID: 0}
 --- !u!4 &1585099617
 Transform:
   m_ObjectHideFlags: 0
