@@ -130,7 +130,7 @@ GameObject:
   - component: {fileID: 21819033}
   - component: {fileID: 21819032}
   m_Layer: 0
-  m_Name: SFXManager
+  m_Name: SFXPoolManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -307,6 +307,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b4c50ab196044cf3b8a8676332c05af4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: NiqonNO.Core::NiqonNO.Core.Audio.NOSoundEmitter
+  SoundPoolManager: {fileID: 21819032}
   AudioSource: {fileID: 1289799569}
 --- !u!1 &1585099615
 GameObject:
@@ -340,11 +341,6 @@ MonoBehaviour:
   <MonoBehaviourManagers>k__BackingField:
   - {fileID: 21819032}
   <ScriptableObjectManagers>k__BackingField: []
-  bb:
-    UseReference: 0
-    LocalValue: 0
-    LocalReference: {fileID: 0}
-  aa: {fileID: 0}
 --- !u!4 &1585099617
 Transform:
   m_ObjectHideFlags: 0
