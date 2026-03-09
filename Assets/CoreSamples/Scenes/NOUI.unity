@@ -129,7 +129,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1152359183}
   - component: {fileID: 1152359184}
-  - component: {fileID: 1152359185}
   - component: {fileID: 1152359186}
   m_Layer: 0
   m_Name: UI Toolkit Canvas
@@ -151,7 +150,9 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
-  - {fileID: 1927696877}
+  - {fileID: 1910349570}
+  - {fileID: 2096190458}
+  - {fileID: 1913063006}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1152359184
@@ -177,19 +178,6 @@ MonoBehaviour:
   m_PivotReferenceSize: 0
   m_Pivot: 0
   m_WorldSpaceCollider: {fileID: 0}
---- !u!114 &1152359185
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1152359181}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 17e62bd9ac7a495eaaf0a99c951a1ef1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  Document: {fileID: 1152359184}
 --- !u!114 &1152359186
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -202,73 +190,30 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 021a5159946e43b1a8d860edc5bafcfb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  DocumentView: {fileID: 1152359185}
-  DataSource:
-    <BindTarget>k__BackingField:
-      BindBy: 1
-      BindName: VisualElement
-      BindClass: 
-    <Callbacks>k__BackingField:
-    - <BindTarget>k__BackingField:
-        BindBy: 2
-        BindName: 
-        BindClass: unity-base-slider__drag-container
-      Callbacks:
-      - rid: 4838228690229264456
-      - rid: 4838228690229264469
-      - rid: 4838228690229264470
-    - <BindTarget>k__BackingField:
-        BindBy: 2
-        BindName: 
-        BindClass: ternary-slider__drag-area
-      Callbacks:
-      - rid: 4838228690229264459
-      - rid: 4838228690229264467
-      - rid: 4838228690229264468
-    - <BindTarget>k__BackingField:
-        BindBy: 2
-        BindName: 
-        BindClass: unity-button
-      Callbacks:
-      - rid: 4838228690229264460
-      - rid: 4838228690229264461
+  Document: {fileID: 1152359184}
+  Callbacks:
+  - {fileID: 1910349569}
+  - {fileID: 2096190457}
+  - {fileID: 1913063005}
+  Model:
     TernaryData:
-      <BindTarget>k__BackingField:
-        BindBy: 2
-        BindName: 
-        BindClass: ternary-slider
-      <Callbacks>k__BackingField: []
-      <Data>k__BackingField:
-        UseReference: 0
-        LocalValue: {x: 33, y: 34, z: 33}
-        LocalReference: {fileID: 0}
+      UseReference: 0
+      LocalValue: {x: 33, y: 34, z: 33}
+      LocalReference: {fileID: 0}
     SliderDataA:
-      <BindTarget>k__BackingField:
-        BindBy: 1
-        BindName: slider-sample-A
-        BindClass: 
-      <Callbacks>k__BackingField: []
-      <Data>k__BackingField:
-        UseReference: 0
-        LocalValue: 33
-        LocalReference: {fileID: 0}
+      UseReference: 0
+      LocalValue: 35
+      LocalReference: {fileID: 0}
     SliderDataB:
-      <BindTarget>k__BackingField:
-        BindBy: 1
-        BindName: slider-sample-B
-        BindClass: 
-      <Callbacks>k__BackingField: []
-      <Data>k__BackingField:
-        UseReference: 0
-        LocalValue: 66
-        LocalReference: {fileID: 0}
+      UseReference: 0
+      LocalValue: 65
+      LocalReference: {fileID: 0}
     SelectorDataA:
-      <BindTarget>k__BackingField:
-        BindBy: 1
-        BindName: selector-sample-A
-        BindClass: 
-      <Callbacks>k__BackingField: []
-      <Data>k__BackingField:
+      SelectedItem:
+        UseReference: 0
+        LocalValue: 0
+        LocalReference: {fileID: 0}
+      DataList:
       - {fileID: 11400000, guid: 8f020345e5dd7754f82beaffa68b083d, type: 2}
       - {fileID: 11400000, guid: 437a0f3ec06ebee459de78029e14e092, type: 2}
       - {fileID: 11400000, guid: 4c5b14194c5a2ee4f8856c7253f05525, type: 2}
@@ -277,171 +222,16 @@ MonoBehaviour:
       - {fileID: 11400000, guid: 4bfde7c977692794a8793afa90b35f36, type: 2}
       - {fileID: 11400000, guid: 142ee16f797e08c40b9bea3d13d337fc, type: 2}
       - {fileID: 11400000, guid: e9e38f375a250ca4c98654859419e815, type: 2}
-      <SelectedIndex>k__BackingField: 0
     SelectorDataB:
-      <BindTarget>k__BackingField:
-        BindBy: 1
-        BindName: selector-sample-B
-        BindClass: 
-      <Callbacks>k__BackingField: []
-      <Data>k__BackingField:
+      SelectedItem:
+        UseReference: 0
+        LocalValue: 0
+        LocalReference: {fileID: 0}
+      DataList:
+      - {fileID: 11400000, guid: 8f020345e5dd7754f82beaffa68b083d, type: 2}
       - {fileID: 11400000, guid: 437a0f3ec06ebee459de78029e14e092, type: 2}
-      - {fileID: 11400000, guid: 4c5b14194c5a2ee4f8856c7253f05525, type: 2}
-      - {fileID: 11400000, guid: 4fb7d7b55904d0c459138e60f2570703, type: 2}
-      <SelectedIndex>k__BackingField: 0
-  references:
-    version: 2
-    RefIds:
-    - rid: 4838228690229264456
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: Play
-              m_Mode: 2
-              m_Arguments:
-                m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
-                  NiqonNO.Core
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264459
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: Play
-              m_Mode: 2
-              m_Arguments:
-                m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
-                  NiqonNO.Core
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264460
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: Play
-              m_Mode: 2
-              m_Arguments:
-                m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
-                  NiqonNO.Core
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264461
-      type: {class: NOClickCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: Play
-              m_Mode: 2
-              m_Arguments:
-                m_ObjectArgument: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
-                  NiqonNO.Core
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264467
-      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: PlayTracked
-              m_Mode: 2
-              m_Arguments:
-                m_ObjectArgument: {fileID: 11400000, guid: c8923e022e5805c47a61e846d2c8abf7, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
-                  NiqonNO.Core
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264468
-      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: StopTracked
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264469
-      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: PlayTracked
-              m_Mode: 2
-              m_Arguments:
-                m_ObjectArgument: {fileID: 11400000, guid: c8923e022e5805c47a61e846d2c8abf7, type: 2}
-                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
-                  NiqonNO.Core
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
-    - rid: 4838228690229264470
-      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
-      data:
-        <Callback>k__BackingField:
-          m_PersistentCalls:
-            m_Calls:
-            - m_Target: {fileID: 1927696876}
-              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
-              m_MethodName: StopTracked
-              m_Mode: 1
-              m_Arguments:
-                m_ObjectArgument: {fileID: 0}
-                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-                m_IntArgument: 0
-                m_FloatArgument: 0
-                m_StringArgument: 
-                m_BoolArgument: 0
-              m_CallState: 2
+      - {fileID: 11400000, guid: 142ee16f797e08c40b9bea3d13d337fc, type: 2}
+      - {fileID: 11400000, guid: e9e38f375a250ca4c98654859419e815, type: 2}
 --- !u!1 &1259326811
 GameObject:
   m_ObjectHideFlags: 0
@@ -567,6 +357,209 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1910349568
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1910349570}
+  - component: {fileID: 1910349569}
+  m_Layer: 0
+  m_Name: Button Callbacks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1910349569
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910349568}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085ca95608dc4b8bbdb78da73dfb3231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NiqonNO.UI::NiqonNO.UI.Callbacks.NOCallbackHandler
+  <BindTarget>k__BackingField:
+    BindBy: 2
+    BindName: 
+    BindClass: unity-button
+  Callbacks:
+  - rid: 6682760425526001774
+  - rid: 6682760425526001823
+  references:
+    version: 2
+    RefIds:
+    - rid: 6682760425526001774
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: Play
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
+                  NiqonNO.Core
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - rid: 6682760425526001823
+      type: {class: NOClickCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: Play
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 11400000, guid: e7241e78f9442e24d91d1d0e625b7123, type: 2}
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
+                  NiqonNO.Core
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+--- !u!4 &1910349570
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1910349568}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1152359183}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1913063004
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1913063006}
+  - component: {fileID: 1913063005}
+  m_Layer: 0
+  m_Name: Ternary Callbacks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &1913063005
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913063004}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085ca95608dc4b8bbdb78da73dfb3231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NiqonNO.UI::NiqonNO.UI.Callbacks.NOCallbackHandler
+  <BindTarget>k__BackingField:
+    BindBy: 2
+    BindName: 
+    BindClass: ternary-slider__drag-area
+  Callbacks:
+  - rid: 6682760425526001783
+  - rid: 6682760425526001784
+  - rid: 6682760425526001785
+  references:
+    version: 2
+    RefIds:
+    - rid: 6682760425526001783
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: Play
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
+                  NiqonNO.Core
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - rid: 6682760425526001784
+      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: PlayTracked
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 11400000, guid: c8923e022e5805c47a61e846d2c8abf7, type: 2}
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
+                  NiqonNO.Core
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - rid: 6682760425526001785
+      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: StopTracked
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+--- !u!4 &1913063006
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1913063004}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 1152359183}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &1927696875
 GameObject:
   m_ObjectHideFlags: 0
@@ -604,6 +597,117 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1927696875}
   serializedVersion: 2
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &2096190456
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2096190458}
+  - component: {fileID: 2096190457}
+  m_Layer: 0
+  m_Name: Slider Callbacks
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2096190457
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096190456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 085ca95608dc4b8bbdb78da73dfb3231, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NiqonNO.UI::NiqonNO.UI.Callbacks.NOCallbackHandler
+  <BindTarget>k__BackingField:
+    BindBy: 2
+    BindName: 
+    BindClass: unity-base-slider__drag-container
+  Callbacks:
+  - rid: 6682760425526001779
+  - rid: 6682760425526001780
+  - rid: 6682760425526001781
+  references:
+    version: 2
+    RefIds:
+    - rid: 6682760425526001779
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: Play
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 11400000, guid: 2fe447ffe77baa144873abcf004e2100, type: 2}
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
+                  NiqonNO.Core
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - rid: 6682760425526001780
+      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: PlayTracked
+              m_Mode: 2
+              m_Arguments:
+                m_ObjectArgument: {fileID: 11400000, guid: c8923e022e5805c47a61e846d2c8abf7, type: 2}
+                m_ObjectArgumentAssemblyTypeName: NiqonNO.Core.Audio.Logic.NOSoundClipData,
+                  NiqonNO.Core
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+    - rid: 6682760425526001781
+      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+      data:
+        <Callback>k__BackingField:
+          m_PersistentCalls:
+            m_Calls:
+            - m_Target: {fileID: 1927696876}
+              m_TargetAssemblyTypeName: NiqonNO.Core.Audio.World.NOAudioPlayer, NiqonNO.Core
+              m_MethodName: StopTracked
+              m_Mode: 1
+              m_Arguments:
+                m_ObjectArgument: {fileID: 0}
+                m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+                m_IntArgument: 0
+                m_FloatArgument: 0
+                m_StringArgument: 
+                m_BoolArgument: 0
+              m_CallState: 2
+--- !u!4 &2096190458
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2096190456}
+  serializedVersion: 2
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -616,5 +720,6 @@ SceneRoots:
   m_ObjectHideFlags: 0
   m_Roots:
   - {fileID: 1259326813}
+  - {fileID: 1927696877}
   - {fileID: 1152359183}
   - {fileID: 1535520546}

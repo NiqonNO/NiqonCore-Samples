@@ -1,18 +1,89 @@
-﻿using UnityEngine;
+﻿using System.Collections.Generic;
+using NiqonNO.UI.MVVM;
+using Unity.Properties;
+using UnityEngine;
 
 namespace NiqonNO.Samples
 {
-	public class NOSampleController : MonoBehaviour
+	public class NOSampleController : NODocumentController
 	{
-		[SerializeField] [Header("View")] 
-		private NOSampleView DocumentView;
+		[SerializeField] private NOSampleData Model;
 
-		[SerializeField] [Header("Model")] 
-		private NOSampleData DataSource;
+		private NOPropertyObserver<Vector3> TernaryObserver;
+		private NOPropertyObserver<float> SliderAObserver;
+		private NOPropertyObserver<float> SliderBObserver;
+		
+		private NOPropertyObserver<int> CollectionSelectionAObserver;
+		private NOCollectionObserver<NOSampleModel, INOBindingContext> CollectionAObserver;
+		
+		private NOPropertyObserver<int> CollectionSelectionBObserver;
+		private NOCollectionObserver<NOSampleModel, INOBindingContext> CollectionBObserver;
 
-		private void OnEnable()
+		[CreateProperty]
+		private Vector3 TernaryValue
 		{
-			DocumentView.Init(new NOSampleViewModel(DataSource));
+			get => TernaryObserver.Validate(Model.TernaryData.Value);
+			set => Model.TernaryData.Value = TernaryObserver.Validate(value);
+		}
+		
+		[CreateProperty]
+		private float SliderAValue
+		{
+			get => SliderAObserver.Validate(Model.SliderDataA.Value);
+			set => Model.SliderDataA.Value = SliderAObserver.Validate(value);
+		}
+		
+		[CreateProperty]
+		private float SliderBValue
+		{
+			get => SliderBObserver.Validate(Model.SliderDataB.Value);
+			set => Model.SliderDataB.Value = SliderBObserver.Validate(value);
+		}
+		
+		[CreateProperty]
+		private int CollectionSelectionAValue
+		{
+			get => CollectionSelectionAObserver.Validate(Model.SelectorDataA.SelectedItem.Value);
+			set => Model.SelectorDataA.SelectedItem.Value = CollectionSelectionAObserver.Validate(value);
+		}
+		[CreateProperty]
+		private List<INOBindingContext> CollectionAValue
+		{
+			get => CollectionAObserver.Validate(Model.SelectorDataA.DataList);
+			set => Model.SelectorDataA.DataList = CollectionAObserver.Validate(value);
+		}
+		
+		[CreateProperty]
+		private int CollectionSelectionBValue
+		{
+			get => CollectionSelectionBObserver.Validate(Model.SelectorDataB.SelectedItem.Value);
+			set => Model.SelectorDataB.SelectedItem.Value = CollectionSelectionBObserver.Validate(value);
+		}
+		[CreateProperty]
+		private List<INOBindingContext> CollectionBValue
+		{
+			get => CollectionBObserver.Validate(Model.SelectorDataB.DataList);
+			set => Model.SelectorDataB.DataList = CollectionBObserver.Validate(value);
+		}
+		
+		protected override void SetupViewModel()
+		{
+			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value, DebugValue);
+			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value, DebugValue);
+			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value, DebugValue);
+			
+			CollectionSelectionAObserver = new NOPropertyObserver<int>(Model.SelectorDataA.SelectedItem.Value, DebugValue);
+			CollectionAObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataA.DataList, DebugValue);
+			
+			CollectionSelectionBObserver = new NOPropertyObserver<int>(Model.SelectorDataB.SelectedItem.Value, DebugValue);
+			CollectionBObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataB.DataList, DebugValue);
+			
+			base.SetupViewModel();
+		}
+
+		private void DebugValue<T>(T value)
+		{
+			Debug.Log($"Updated: {value}");
 		}
 	}
 }

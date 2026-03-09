@@ -1,21 +1,31 @@
 using System;
-using NiqonNO.UI.MVVM;
+using System.Collections.Generic;
+using NiqonNO.Core;
 using UnityEngine;
 
 namespace NiqonNO.Samples
 {
 	[Serializable]
-	public class NOSampleData : NOBindingData
+	public class NOSampleData
 	{
 		[SerializeField]
-		public NOTernaryData TernaryData;
+		public NOValue<Vector3> TernaryData;
 		[SerializeField] 
-		public NOSliderData SliderDataA;
+		public NOValue<float> SliderDataA;
 		[SerializeField] 
-		public NOSliderData SliderDataB;
+		public NOValue<float> SliderDataB;
 		[SerializeField] 
-		public NOSelectorData<NOSampleModel> SelectorDataA;
+		public NOSampleCollectionData SelectorDataA;
 		[SerializeField] 
-		public NOSelectorData<NOSampleModel> SelectorDataB;
+		public NOSampleCollectionData SelectorDataB;
+	}
+	
+	[Serializable]
+	public class NOSampleCollectionData
+	{
+		[SerializeField] 
+		public NOValue<int> SelectedItem;
+		[SerializeField] 
+		public List<NOSampleModel> DataList;
 	}
 }
