@@ -19,15 +19,15 @@
         <NiqonNO.UI.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-A" style="display: flex; flex-grow: 1;">
             <Bindings>
                 <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay"/>
-                <ui:DataBinding property="SourceCollection" data-source-path="CollectionAValue" binding-mode="TwoWay" data-source-type="NiqonNO.Samples.NOSampleDataCollectionViewModel, Assembly-CSharp"/>
                 <ui:DataBinding property="SelectedIndex" data-source-path="CollectionSelectionAValue" binding-mode="TwoWay"/>
+                <ui:DataBinding property="SourceCollection" data-source-path="CollectionAValue" binding-mode="TwoWay"/>
             </Bindings>
         </NiqonNO.UI.NOToggleSelector>
         <NiqonNO.UI.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-B" style="display: flex; flex-grow: 0.25;">
             <Bindings>
                 <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay"/>
-                <ui:DataBinding property="SourceCollection" data-source-path="CollectionBValue" binding-mode="TwoWay"/>
                 <ui:DataBinding property="SelectedIndex" data-source-path="CollectionSelectionBValue" binding-mode="TwoWay"/>
+                <ui:DataBinding property="SourceCollection" data-source-path="CollectionBValue" binding-mode="TwoWay"/>
             </Bindings>
         </NiqonNO.UI.NOToggleSelector>
     </ui:VisualElement>

@@ -7,7 +7,7 @@ namespace NiqonNO.Samples
 {
 	public class NOSampleController : NODocumentController
 	{
-		[SerializeField] private NOSampleData Model;
+		[SerializeField, DontCreateProperty] private NOSampleData Model;
 
 		private NOPropertyObserver<Vector3> TernaryObserver;
 		private NOPropertyObserver<float> SliderAObserver;
@@ -47,7 +47,7 @@ namespace NiqonNO.Samples
 			set => Model.SelectorDataA.SelectedItem.Value = CollectionSelectionAObserver.Validate(value);
 		}
 		[CreateProperty]
-		private List<INOBindingContext> CollectionAValue
+		private IReadOnlyList<INOBindingContext> CollectionAValue
 		{
 			get => CollectionAObserver.Validate(Model.SelectorDataA.DataList);
 			set => Model.SelectorDataA.DataList = CollectionAObserver.Validate(value);
@@ -60,7 +60,7 @@ namespace NiqonNO.Samples
 			set => Model.SelectorDataB.SelectedItem.Value = CollectionSelectionBObserver.Validate(value);
 		}
 		[CreateProperty]
-		private List<INOBindingContext> CollectionBValue
+		private IReadOnlyList<INOBindingContext> CollectionBValue
 		{
 			get => CollectionBObserver.Validate(Model.SelectorDataB.DataList);
 			set => Model.SelectorDataB.DataList = CollectionBObserver.Validate(value);
@@ -68,22 +68,17 @@ namespace NiqonNO.Samples
 		
 		protected override void SetupViewModel()
 		{
-			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value, DebugValue);
-			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value, DebugValue);
-			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value, DebugValue);
+			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value);
+			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value);
+			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value);
 			
-			CollectionSelectionAObserver = new NOPropertyObserver<int>(Model.SelectorDataA.SelectedItem.Value, DebugValue);
-			CollectionAObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataA.DataList, DebugValue);
+			CollectionSelectionAObserver = new NOPropertyObserver<int>(Model.SelectorDataA.SelectedItem.Value);
+			CollectionAObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataA.DataList);
 			
-			CollectionSelectionBObserver = new NOPropertyObserver<int>(Model.SelectorDataB.SelectedItem.Value, DebugValue);
-			CollectionBObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataB.DataList, DebugValue);
+			CollectionSelectionBObserver = new NOPropertyObserver<int>(Model.SelectorDataB.SelectedItem.Value);
+			CollectionBObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataB.DataList);
 			
 			base.SetupViewModel();
-		}
-
-		private void DebugValue<T>(T value)
-		{
-			Debug.Log($"Updated: {value}");
 		}
 	}
 }
