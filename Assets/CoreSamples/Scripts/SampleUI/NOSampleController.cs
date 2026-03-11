@@ -19,21 +19,21 @@ namespace NiqonNO.Samples
 		private NOPropertyObserver<int> CollectionSelectionBObserver;
 		private NOCollectionObserver<NOSampleModel, INOBindingContext> CollectionBObserver;
 
-		[CreateProperty]
+		[NOMVVMBind]
 		private Vector3 TernaryValue
 		{
 			get => TernaryObserver.Validate(Model.TernaryData.Value);
 			set => Model.TernaryData.Value = TernaryObserver.Validate(value);
 		}
 		
-		[CreateProperty]
+		[NOMVVMBind]
 		private float SliderAValue
 		{
 			get => SliderAObserver.Validate(Model.SliderDataA.Value);
 			set => Model.SliderDataA.Value = SliderAObserver.Validate(value);
 		}
 		
-		[CreateProperty]
+		[NOMVVMBind]
 		private float SliderBValue
 		{
 			get => SliderBObserver.Validate(Model.SliderDataB.Value);
