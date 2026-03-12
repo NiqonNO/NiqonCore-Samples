@@ -170,6 +170,10 @@ MonoBehaviour:
   Source:
     Component: {fileID: 1152359186}
     PropertyName: TernaryValue
+  Label: 
+  XIcon: {fileID: 0}
+  YIcon: {fileID: 0}
+  ZIcon: {fileID: 0}
 --- !u!1 &392555312
 GameObject:
   m_ObjectHideFlags: 0
@@ -516,6 +520,9 @@ MonoBehaviour:
   Source:
     Component: {fileID: 1152359186}
     PropertyName: SliderBValue
+  Label: 
+  MinIcon: {fileID: 0}
+  MaxIcon: {fileID: 0}
 --- !u!4 &1561127182
 Transform:
   m_ObjectHideFlags: 0
@@ -582,6 +589,9 @@ MonoBehaviour:
   Source:
     Component: {fileID: 1152359186}
     PropertyName: SliderAValue
+  Label: 
+  MinIcon: {fileID: 0}
+  MaxIcon: {fileID: 0}
 --- !u!1 &1910349568
 GameObject:
   m_ObjectHideFlags: 0

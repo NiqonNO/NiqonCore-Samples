@@ -68,17 +68,22 @@ namespace NiqonNO.Samples
 		
 		protected override void SetupViewModel()
 		{
-			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value);
-			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value);
-			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value);
+			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value, DebugValue);
+			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value, DebugValue);
+			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value, DebugValue);
 			
-			CollectionSelectionAObserver = new NOPropertyObserver<int>(Model.SelectorDataA.SelectedItem.Value);
-			CollectionAObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataA.DataList);
+			CollectionSelectionAObserver = new NOPropertyObserver<int>(Model.SelectorDataA.SelectedItem.Value, DebugValue);
+			CollectionAObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataA.DataList, DebugValue);
 			
-			CollectionSelectionBObserver = new NOPropertyObserver<int>(Model.SelectorDataB.SelectedItem.Value);
-			CollectionBObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataB.DataList);
+			CollectionSelectionBObserver = new NOPropertyObserver<int>(Model.SelectorDataB.SelectedItem.Value, DebugValue);
+			CollectionBObserver = new NOCollectionObserver<NOSampleModel, INOBindingContext>(Model.SelectorDataB.DataList, DebugValue);
 			
 			base.SetupViewModel();
+		}
+
+		private void DebugValue<T>(T value)
+		{
+			Debug.Log($"Updated: {value}");
 		}
 	}
 }
