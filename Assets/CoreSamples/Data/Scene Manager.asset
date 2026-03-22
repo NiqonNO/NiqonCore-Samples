@@ -12,21 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 790a9c259f3880c45adf3836f41aa44f, type: 3}
   m_Name: Scene Manager
   m_EditorClassIdentifier: 
-  MainScene: NOSample
-  SceneDependencyTree:
-    DependencyTree:
-    - SceneName: Boot
-      SceneParent: 
-    - SceneName: NOCore
-      SceneParent: 
-    - SceneName: NOUI
-      SceneParent: NOSample
-    - SceneName: NOSample
-      SceneParent: NOCore
-    - SceneName: NOUI 2
-      SceneParent: NOSample 2
-    - SceneName: NOSample 2
-      SceneParent: NOCore
+  MainScene: NOCore
   OnLoadingStartedEvent:
     m_PersistentCalls:
       m_Calls: []
