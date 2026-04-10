@@ -10,6 +10,7 @@ namespace NiqonNO.Samples
 		[SerializeField, DontCreateProperty] private NOSampleData Model;
 
 		private NOPropertyObserver<Vector3> TernaryObserver;
+		private NOPropertyObserver<Vector4> QuaternaryObserver;
 		private NOPropertyObserver<float> SliderAObserver;
 		private NOPropertyObserver<float> SliderBObserver;
 		
@@ -24,6 +25,13 @@ namespace NiqonNO.Samples
 		{
 			get => TernaryObserver.Validate(Model.TernaryData.Value);
 			set => Model.TernaryData.Value = TernaryObserver.Validate(value);
+		}
+		
+		[NOMVVMBind]
+		private Vector4 QuaternaryValue
+		{
+			get => QuaternaryObserver.Validate(Model.QuaternaryData.Value);
+			set => Model.QuaternaryData.Value = QuaternaryObserver.Validate(value);
 		}
 		
 		[NOMVVMBind]
@@ -69,6 +77,7 @@ namespace NiqonNO.Samples
 		protected override void SetupViewModel()
 		{
 			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value, DebugValue);
+			QuaternaryObserver = new NOPropertyObserver<Vector4>(Model.QuaternaryData.Value, DebugValue);
 			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value, DebugValue);
 			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value, DebugValue);
 			
