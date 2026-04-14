@@ -11,6 +11,7 @@ namespace NiqonNO.Samples
 
 		private NOPropertyObserver<Vector3> TernaryObserver;
 		private NOPropertyObserver<Vector4> QuaternaryObserver;
+		private NOPropertyObserver<Color> ColorPickerObserver;
 		private NOPropertyObserver<float> SliderAObserver;
 		private NOPropertyObserver<float> SliderBObserver;
 		
@@ -19,7 +20,7 @@ namespace NiqonNO.Samples
 		
 		private NOPropertyObserver<int> CollectionSelectionBObserver;
 		private NOCollectionObserver<NOSampleModel, INOBindingContext> CollectionBObserver;
-
+		
 		[NOMVVMBind]
 		private Vector3 TernaryValue
 		{
@@ -32,6 +33,13 @@ namespace NiqonNO.Samples
 		{
 			get => QuaternaryObserver.Validate(Model.QuaternaryData.Value);
 			set => Model.QuaternaryData.Value = QuaternaryObserver.Validate(value);
+		}
+		
+		[NOMVVMBind]
+		private Color ColorPickerValue
+		{
+			get => ColorPickerObserver.Validate(Model.ColorPickerData.Value);
+			set => Model.ColorPickerData.Value = ColorPickerObserver.Validate(value);
 		}
 		
 		[NOMVVMBind]
@@ -78,6 +86,7 @@ namespace NiqonNO.Samples
 		{
 			TernaryObserver = new NOPropertyObserver<Vector3>(Model.TernaryData.Value, DebugValue);
 			QuaternaryObserver = new NOPropertyObserver<Vector4>(Model.QuaternaryData.Value, DebugValue);
+			ColorPickerObserver = new NOPropertyObserver<Color>(Model.ColorPickerData.Value, DebugValue);
 			SliderAObserver = new NOPropertyObserver<float>(Model.SliderDataA.Value, DebugValue);
 			SliderBObserver = new NOPropertyObserver<float>(Model.SliderDataB.Value, DebugValue);
 			

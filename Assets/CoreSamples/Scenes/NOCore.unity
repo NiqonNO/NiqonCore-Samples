@@ -338,6 +338,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 891caaa3de128ca4da48b92601df9638, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  <MainScene>k__BackingField: 0
   <MonoBehaviourManagers>k__BackingField:
   - {fileID: 21819032}
   <ScriptableObjectManagers>k__BackingField: []

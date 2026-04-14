@@ -13,6 +13,8 @@ namespace NiqonNO.Samples
 		[SerializeField] 
 		public NOValue<Vector4> QuaternaryData;
 		[SerializeField] 
+		public NOValue<Color> ColorPickerData;
+		[SerializeField] 
 		public NOValue<float> SliderDataA;
 		[SerializeField] 
 		public NOValue<float> SliderDataB;

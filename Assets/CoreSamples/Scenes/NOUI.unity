@@ -207,6 +207,7 @@ Transform:
   - {fileID: 1601370359}
   - {fileID: 1561127182}
   - {fileID: 460836911}
+  - {fileID: 836578348}
   m_Father: {fileID: 1152359183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &460836910
@@ -300,6 +301,59 @@ Transform:
   - {fileID: 1543969836}
   m_Father: {fileID: 1152359183}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &836578347
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 836578348}
+  - component: {fileID: 836578349}
+  m_Layer: 0
+  m_Name: Color Picker ViewModel
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &836578348
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836578347}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 392555313}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &836578349
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 836578347}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 45ccfe7c1b4a4640aae4f9eff9dfe58f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: NiqonNO.UI::NiqonNO.UI.MVVM.NOColorPickerViewModel
+  <BindTarget>k__BackingField:
+    BindBy: 3
+    BindName: color-picker-sample
+    BindClass: color-picker
+  Source:
+    Component: {fileID: 1152359186}
+    PropertyName: ColorPickerValue
+  Label: 
+  ColorPickerType: 1
 --- !u!1 &1152359181
 GameObject:
   m_ObjectHideFlags: 0
@@ -376,6 +430,7 @@ MonoBehaviour:
   - {fileID: 1601370360}
   - {fileID: 1561127181}
   - {fileID: 460836912}
+  - {fileID: 836578349}
   Callbacks:
   - {fileID: 1910349569}
   - {fileID: 2096190457}
@@ -389,6 +444,10 @@ MonoBehaviour:
     QuaternaryData:
       UseReference: 0
       LocalValue: {x: 25, y: 25, z: 25, w: 25}
+      LocalReference: {fileID: 0}
+    ColorPickerData:
+      UseReference: 0
+      LocalValue: {r: 0, g: 0, b: 0, a: 1}
       LocalReference: {fileID: 0}
     SliderDataA:
       UseReference: 0

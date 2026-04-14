@@ -1,5 +1,6 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
-    <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Preview.uss?fileID=7433441132597879392&amp;guid=5f0f76ff97607d046858e8cf51782b98&amp;type=3"/>
+    <Style src="project://database/Assets/_UIToolkit/Resources/uss_Color%20Picker.uss?fileID=7433441132597879392&amp;guid=e07f788a9f27cb44a98d9eb6bcf91977&amp;type=3#uss_Color Picker"/>
+    <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Preview.uss?fileID=7433441132597879392&amp;guid=5f0f76ff97607d046858e8cf51782b98&amp;type=3#uss_Preview"/>
     <ui:VisualElement name="VisualElement" data-source-type="NiqonNO.Samples.NOSampleController, Assembly-CSharp" style="background-color: rgb(26, 26, 26); padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(193, 149, 88); border-right-color: rgb(193, 149, 88); border-top-color: rgb(193, 149, 88); border-bottom-color: rgb(193, 149, 88); height: 980px; width: 570px; align-self: flex-start; flex-direction: column; top: 5%; left: 50px; position: absolute;">
         <NiqonNO.UI.NOTernarySlider high-value="100" round-to-int="false" value="48.5,34,48.5" label="Ternary" name="ternary-sample" data-source-type="NiqonNO.UI.MVVM.NOTernaryViewModel, NiqonNO.UI" style="overflow: visible; flex-direction: column;">
             <Bindings>
@@ -32,15 +33,16 @@
         </NiqonNO.UI.NOToggleSelector>
     </ui:VisualElement>
     <ui:VisualElement name="VisualElement" data-source-type="NiqonNO.Samples.NOSampleController, Assembly-CSharp" style="background-color: rgb(26, 26, 26); padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(193, 149, 88); border-right-color: rgb(193, 149, 88); border-top-color: rgb(193, 149, 88); border-bottom-color: rgb(193, 149, 88); height: 980px; width: 570px; align-self: flex-start; flex-direction: column; top: 5%; left: 635px; position: absolute;">
-        <NiqonNO.UI.NOQuaternarySlider name="quaternary-sample" value="0,0,0,0" data-source-type="NiqonNO.UI.MVVM.NOQuaternaryViewModel, NiqonNO.UI" label="Quaternary" style="flex-direction: column;">
+        <NiqonNO.UI.NOQuaternarySlider name="quaternary-sample" value="25,32.66667,32.66667,32.66667" data-source-type="NiqonNO.UI.MVVM.NOQuaternaryViewModel, NiqonNO.UI" label="Quaternary" style="flex-direction: column;">
             <Bindings>
                 <ui:DataBinding property="value" binding-mode="TwoWay" data-source-path="Value"/>
             </Bindings>
         </NiqonNO.UI.NOQuaternarySlider>
-        <NiqonNO.UI.NOColorPicker value="1" saturation="1" style="height: 422px; display: none; visibility: hidden;"/>
-        <ui:VisualElement style="flex-grow: 1; flex-direction: row; margin-left: 50px; margin-right: 50px; margin-bottom: 50px; margin-top: 50px;">
-            <ui:VisualElement style="-unity-material: url(&quot;project://database/Assets/_UIToolkit/Graphics/Materials/mat_Color%20Wheel.mat?fileID=2100000&amp;guid=a0a2ce747cef9ef4bb36146e4d8f204e&amp;type=2#mat_Color Wheel&quot;); margin-left: 0; margin-right: 0; background-color: rgb(255, 255, 255); aspect-ratio: 1; border-left-color: rgba(0, 0, 0, 0); border-right-color: rgba(0, 0, 0, 0); border-top-color: rgba(0, 0, 0, 0); border-bottom-color: rgba(0, 0, 0, 0);"/>
-            <ui:VisualElement style="flex-grow: 1; background-color: rgb(0, 0, 0); -unity-material: url(&quot;project://database/Assets/_UIToolkit/Graphics/Materials/mat_Color%20Slider.mat?fileID=2100000&amp;guid=603ce8aaa4a53784daddfcb92e1509b7&amp;type=2#mat_Color Slider&quot;); margin-left: 40px;"/>
-        </ui:VisualElement>
+        <NiqonNO.UI.NOColorPicker saturation="1" label="Color Picker" picker-plot-drawer="project://database/Assets/_UIToolkit/Shaders/shg_NO_UI_ColorWheel.shadergraph?fileID=-6465566751694194690&amp;guid=ee7f4fcd1389943458f95f466a449083&amp;type=3#Shader Graphs/shg_NO_UI_ColorWheel" edges-offset="0.1,0.95" picker-plot-type="HueValue_Saturation" name="color-picker-sample" picker-slider-drawer="project://database/Assets/_UIToolkit/Shaders/shg_NO_UI_ColorSlider.shadergraph?fileID=-6465566751694194690&amp;guid=e02609f68bfe822408658f3b0a297cc2&amp;type=3#Shader Graphs/shg_NO_UI_ColorSlider" data-source-type="NiqonNO.UI.MVVM.NOColorPickerViewModel, NiqonNO.UI" value="0,1,-0.1" color-value="rgb(0, 0, 0)" style="height: 422px; flex-grow: 1; flex-direction: column;">
+            <Bindings>
+                <ui:DataBinding property="PickerPlotType" data-source-path="ColorPickerType" binding-mode="ToTarget"/>
+                <ui:DataBinding property="ColorValue" data-source-path="Value" binding-mode="TwoWay"/>
+            </Bindings>
+        </NiqonNO.UI.NOColorPicker>
     </ui:VisualElement>
 </ui:UXML>
