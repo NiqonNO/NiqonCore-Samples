@@ -1,47 +1,47 @@
 <ui:UXML xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ui="UnityEngine.UIElements" xmlns:uie="UnityEditor.UIElements" noNamespaceSchemaLocation="../../../../UIElementsSchema/UIElements.xsd" editor-extension-mode="False">
     <Style src="project://database/Assets/CoreSamples/UI/Toolkit/uss_Preview.uss?fileID=7433441132597879392&amp;guid=5f0f76ff97607d046858e8cf51782b98&amp;type=3#uss_Preview"/>
     <ui:VisualElement name="VisualElement" data-source-type="NiqonNO.Samples.NOSampleController, Assembly-CSharp" style="background-color: rgb(26, 26, 26); padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(193, 149, 88); border-right-color: rgb(193, 149, 88); border-top-color: rgb(193, 149, 88); border-bottom-color: rgb(193, 149, 88); height: 980px; width: 570px; align-self: flex-start; flex-direction: column; top: 5%; left: 50px; position: absolute;">
-        <NiqonNO.UI.NOTernarySlider high-value="100" round-to-int="false" value="48.5,34,48.5" label="Ternary" name="ternary-sample" data-source-type="NiqonNO.UI.MVVM.NOTernaryViewModel, NiqonNO.UI" style="overflow: visible; flex-direction: column;">
+        <NiqonNO.UI.View.NOTernarySlider high-value="100" round-to-int="false" value="48.5,34,48.5" label="Ternary" name="ternary-sample" data-source-type="NiqonNO.UI.MVVM.NOTernaryViewModel, NiqonNO.UI.ViewModel" style="overflow: visible; flex-direction: column;">
             <Bindings>
                 <ui:DataBinding property="value" data-source-path="Value" binding-mode="TwoWay"/>
             </Bindings>
-        </NiqonNO.UI.NOTernarySlider>
-        <ui:Slider label="Slider" value="42" high-value="100" show-input-field="true" name="slider-sample-A" data-source-type="NiqonNO.UI.MVVM.NOSliderViewModel, NiqonNO.UI" style="flex-direction: column; flex-grow: 0;">
+        </NiqonNO.UI.View.NOTernarySlider>
+        <ui:Slider label="Slider" value="42" high-value="100" show-input-field="true" name="slider-sample-A" data-source-type="NiqonNO.UI.MVVM.NOSliderViewModel, NiqonNO.UI.ViewModel" style="flex-direction: column; flex-grow: 0;">
             <Bindings>
                 <ui:DataBinding property="value" data-source-path="Value" binding-mode="TwoWay"/>
             </Bindings>
         </ui:Slider>
-        <ui:Slider value="42" high-value="100" show-input-field="true" name="slider-sample-B" label="Slider" data-source-type="NiqonNO.UI.MVVM.NOSliderViewModel, NiqonNO.UI" style="flex-direction: column; flex-grow: 0;">
+        <ui:Slider value="42" high-value="100" show-input-field="true" name="slider-sample-B" label="Slider" data-source-type="NiqonNO.UI.MVVM.NOSliderViewModel, NiqonNO.UI.ViewModel" style="flex-direction: column; flex-grow: 0;">
             <Bindings>
                 <ui:DataBinding property="value" data-source-path="Value"/>
             </Bindings>
         </ui:Slider>
-        <NiqonNO.UI.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-A" style="display: flex; flex-grow: 1;">
+        <NiqonNO.UI.View.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-A" style="display: flex; flex-grow: 1;">
             <Bindings>
                 <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay"/>
                 <ui:DataBinding property="SelectedIndex" data-source-path="CollectionSelectionAValue" binding-mode="TwoWay"/>
                 <ui:DataBinding property="SourceCollection" data-source-path="CollectionAValue" binding-mode="TwoWay"/>
             </Bindings>
-        </NiqonNO.UI.NOToggleSelector>
-        <NiqonNO.UI.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-B" style="display: flex; flex-grow: 0.25;">
+        </NiqonNO.UI.View.NOToggleSelector>
+        <NiqonNO.UI.View.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-B" style="display: flex; flex-grow: 0.25;">
             <Bindings>
                 <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay"/>
                 <ui:DataBinding property="SelectedIndex" data-source-path="CollectionSelectionBValue" binding-mode="TwoWay"/>
                 <ui:DataBinding property="SourceCollection" data-source-path="CollectionBValue" binding-mode="TwoWay"/>
             </Bindings>
-        </NiqonNO.UI.NOToggleSelector>
+        </NiqonNO.UI.View.NOToggleSelector>
     </ui:VisualElement>
     <ui:VisualElement name="VisualElement" data-source-type="NiqonNO.Samples.NOSampleController, Assembly-CSharp" style="background-color: rgb(26, 26, 26); padding-top: 20px; padding-right: 20px; padding-bottom: 20px; padding-left: 20px; border-top-width: 5px; border-right-width: 5px; border-bottom-width: 5px; border-left-width: 5px; border-top-left-radius: 10px; border-top-right-radius: 10px; border-bottom-right-radius: 10px; border-bottom-left-radius: 10px; border-left-color: rgb(193, 149, 88); border-right-color: rgb(193, 149, 88); border-top-color: rgb(193, 149, 88); border-bottom-color: rgb(193, 149, 88); height: 980px; width: 570px; align-self: flex-start; flex-direction: column; top: 5%; left: 635px; position: absolute;">
-        <NiqonNO.UI.NOQuaternarySlider name="quaternary-sample" value="25,32.66667,32.66667,32.66667" data-source-type="NiqonNO.UI.MVVM.NOQuaternaryViewModel, NiqonNO.UI" label="Quaternary" style="flex-direction: column;">
+        <NiqonNO.UI.View.NOQuaternarySlider name="quaternary-sample" value="25,32.66667,32.66667,32.66667" data-source-type="NiqonNO.UI.MVVM.NOQuaternaryViewModel, NiqonNO.UI.ViewModel" label="Quaternary" style="flex-direction: column;">
             <Bindings>
                 <ui:DataBinding property="value" binding-mode="TwoWay" data-source-path="Value"/>
             </Bindings>
-        </NiqonNO.UI.NOQuaternarySlider>
-        <NiqonNO.UI.NOColorPicker saturation="1" label="Color Picker" picker-plot-drawer="project://database/Assets/_UIToolkit/Shaders/shg_NO_UI_ColorWheel.shadergraph?fileID=-6465566751694194690&amp;guid=ee7f4fcd1389943458f95f466a449083&amp;type=3#Shader Graphs/shg_NO_UI_ColorWheel" edges-offset="0.1,0.95" picker-plot-type="HueValue_Saturation" name="color-picker-sample" picker-slider-drawer="project://database/Assets/_UIToolkit/Shaders/shg_NO_UI_ColorSlider.shadergraph?fileID=-6465566751694194690&amp;guid=e02609f68bfe822408658f3b0a297cc2&amp;type=3#Shader Graphs/shg_NO_UI_ColorSlider" data-source-type="NiqonNO.UI.MVVM.NOColorPickerViewModel, NiqonNO.UI" value="0,1,-0.1" color-value="rgb(0, 0, 0)" style="height: 422px; flex-grow: 1; flex-direction: column;">
+        </NiqonNO.UI.View.NOQuaternarySlider>
+        <NiqonNO.UI.View.NOColorPicker saturation="1" label="Color Picker" picker-plot-drawer="project://database/Assets/_UIToolkit/Shaders/shg_NO_UI_ColorWheel.shadergraph?fileID=-6465566751694194690&amp;guid=ee7f4fcd1389943458f95f466a449083&amp;type=3#Shader Graphs/shg_NO_UI_ColorWheel" edges-offset="0.1,0.95" picker-plot-type="HueValue_Saturation" name="color-picker-sample" picker-slider-drawer="project://database/Assets/_UIToolkit/Shaders/shg_NO_UI_ColorSlider.shadergraph?fileID=-6465566751694194690&amp;guid=e02609f68bfe822408658f3b0a297cc2&amp;type=3#Shader Graphs/shg_NO_UI_ColorSlider" data-source-type="NiqonNO.UI.MVVM.NOColorPickerViewModel, NiqonNO.UI.ViewModel" value="0,1,-0.1" color-value="rgb(0, 0, 0)" style="height: 422px; flex-grow: 1; flex-direction: column;">
             <Bindings>
                 <ui:DataBinding property="PickerPlotType" data-source-path="ColorPickerType" binding-mode="ToTarget"/>
                 <ui:DataBinding property="ColorValue" data-source-path="Value" binding-mode="TwoWay"/>
             </Bindings>
-        </NiqonNO.UI.NOColorPicker>
+        </NiqonNO.UI.View.NOColorPicker>
     </ui:VisualElement>
 </ui:UXML>

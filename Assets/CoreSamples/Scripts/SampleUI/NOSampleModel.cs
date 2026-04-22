@@ -1,5 +1,6 @@
 using NiqonNO.Core;
 using NiqonNO.UI.MVVM;
+using NiqonNO.UI.View;
 using UnityEngine;
 using UnityEngine.UIElements;
 

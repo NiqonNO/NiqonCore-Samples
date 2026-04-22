@@ -641,14 +641,14 @@ MonoBehaviour:
     BindName: 
     BindClass: quaternary-slider__drag-area
   Callbacks:
-  - rid: 6682760425526001783
-  - rid: 6682760425526001784
-  - rid: 6682760425526001785
+  - rid: 6973853122451996672
+  - rid: 6973853122451996677
+  - rid: 6973853122451996680
   references:
     version: 2
     RefIds:
-    - rid: 6682760425526001783
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996672
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -666,8 +666,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001784
-      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996677
+      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -685,8 +685,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001785
-      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996680
+      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -860,13 +860,13 @@ MonoBehaviour:
     BindName: 
     BindClass: unity-button
   Callbacks:
-  - rid: 6682760425526001774
-  - rid: 6682760425526001823
+  - rid: 6973853122451996673
+  - rid: 6973853122451996676
   references:
     version: 2
     RefIds:
-    - rid: 6682760425526001774
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996673
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -884,8 +884,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001823
-      type: {class: NOClickCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996676
+      type: {class: NOClickCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -952,14 +952,14 @@ MonoBehaviour:
     BindName: 
     BindClass: ternary-slider__drag-area
   Callbacks:
-  - rid: 6682760425526001783
-  - rid: 6682760425526001784
-  - rid: 6682760425526001785
+  - rid: 6973853122451996674
+  - rid: 6973853122451996678
+  - rid: 6973853122451996681
   references:
     version: 2
     RefIds:
-    - rid: 6682760425526001783
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996674
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -977,8 +977,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001784
-      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996678
+      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -996,8 +996,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001785
-      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996681
+      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -1107,14 +1107,14 @@ MonoBehaviour:
     BindName: 
     BindClass: unity-base-slider__drag-container
   Callbacks:
-  - rid: 6682760425526001779
-  - rid: 6682760425526001780
-  - rid: 6682760425526001781
+  - rid: 6973853122451996675
+  - rid: 6973853122451996679
+  - rid: 6973853122451996682
   references:
     version: 2
     RefIds:
-    - rid: 6682760425526001779
-      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996675
+      type: {class: NOPointerEnterCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -1132,8 +1132,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001780
-      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996679
+      type: {class: NOPointerDownCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:
@@ -1151,8 +1151,8 @@ MonoBehaviour:
                 m_StringArgument: 
                 m_BoolArgument: 0
               m_CallState: 2
-    - rid: 6682760425526001781
-      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.Callbacks, asm: NiqonNO.UI}
+    - rid: 6973853122451996682
+      type: {class: NOPointerUpCallback, ns: NiqonNO.UI.View.Callbacks, asm: NiqonNO.UI.View}
       data:
         <Callback>k__BackingField:
           m_PersistentCalls:

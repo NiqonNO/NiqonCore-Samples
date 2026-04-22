@@ -1,5 +1,6 @@
 ﻿using System.Collections.Generic;
 using NiqonNO.UI.MVVM;
+using NiqonNO.UI.View;
 using Unity.Properties;
 using UnityEngine;
 
