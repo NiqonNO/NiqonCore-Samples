@@ -20,7 +20,7 @@
             <Bindings>
                 <ui:DataBinding property="CollectionState" data-source-path="ToggleSelectorState" binding-mode="TwoWay"/>
                 <ui:DataBinding property="SelectedIndex" data-source-path="CollectionSelectionAValue" binding-mode="TwoWay"/>
-                <ui:DataBinding property="SourceCollection" data-source-path="CollectionAValue" binding-mode="TwoWay"/>
+                <ui:DataBinding property="SourceCollection" data-source-path="CollectionAValue" binding-mode="ToTarget"/>
             </Bindings>
         </NiqonNO.UI.View.NOToggleSelector>
         <NiqonNO.UI.View.NOToggleSelector mode="Horizontal" item-template="project://database/Assets/CoreSamples/UI/Toolkit/xml_Toggle%20Tile.uxml?fileID=9197481963319205126&amp;guid=610c0c0cfb6f1874e93b9601e4ade49a&amp;type=3#xml_Toggle Tile" auto-scroll-ease="OutElastic" auto-scroll-duration="1" scroll-deceleration-duration="0.3" direction="Horizontal" selected-index="0" tile-size="100%" name="selector-sample-B" style="display: flex; flex-grow: 0.25;">

@@ -6,7 +6,7 @@ using UnityEngine.UIElements;
 
 namespace NiqonNO.Samples
 {
-	public class NOSampleModel : NOScriptableObject, INOBindingContext
+	public class NOSampleModel : NOScriptableObject, INOBindingData
 	{
 		[field: SerializeField] public string DisplayName { get; set; }
 
